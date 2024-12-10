@@ -26,5 +26,22 @@
                 }
             ?>
         </div>
+        <div id="baner3">
+            <img src="logo2.png" alt="sierpień">
+        </div>
+
+        <main>
+            <?php
+                $sql = "SELECT dataZadania, wpis FROM zadania WHERE miesiac = 'sierpien';";
+                $result = $conn->query($sql);
+
+                while($row = $result -> fetch_array()) {
+                    echo "<div>";
+                        echo "<h5>".$row[0]."</h5>";
+                        echo "<p>".$row[1]."</p>";
+                    echo "</div>";
+                }
+    $conn -> close();
+            ?>
     </body>
 </html>
