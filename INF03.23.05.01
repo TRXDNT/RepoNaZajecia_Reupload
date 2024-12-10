@@ -43,5 +43,8 @@
                 }
     $conn -> close();
             ?>
+        <footer>
+            <p>Stronę wykonał: TRXDNT / BZ </p>
+        </footer>
     </body>
 </html>
